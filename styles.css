@@ -8,22 +8,57 @@ section{
   margin: 0 auto;
 }
 
-#chamaleon{
+.chamaleon{
   position: absolute;
-  width: 150px;
-  height: 200px;
-  left: 420px;
-  top: 420px;
+  width: 111px;
+  height: 180px;
+  left: 453px;
+  top: 440px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rojo {
+  background-image: url("/Images/red\ chamaleon.png");
+}
+
+.azul {
+  background-image: url("/Images/blue\ chamaleon.png");
+}
+
+.verde {
+  background-image: url("/Images/green\ chamaleon.png");
+}
+
+.amarillo {
+  background-image: url("/Images/yellow\ chamaleon.png");
 }
 
 .grasshopper{
   position: absolute;
   width: 120px;
   height: 80px;
-  background-image: url("./Images/saltamontes.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.red{
+  background-image: url("./Images/saltamontes\ red.png");
+}
+
+.green {
+  background-image: url("/Images/saltamontes\ green.png");
+}
+
+.yellow {
+  background-image: url("/Images/saltamontes\ yellow.png");
+}
+
+.blue {
+  background-image: url("/Images/saltamontes\ blue.png");
+}
+
+
 
 .hide{
   display: none;
