@@ -1,7 +1,57 @@
-#canvas {
-    background-color: #FFFFFF;
-    background-image: url(/Images/Diseño\ de\ fondo\ moderno\ abstracto\ ola\ verde\ _\ Descargar\ Vectores\ gratis.jpeg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+section{
+  position: relative;
+  width: 1000px;
+  height: 630px;
+  background-image: url("./Images/fondo-juego.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
 }
+
+#chamaleon{
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  left: 420px;
+  top: 420px;
+}
+
+.grasshopper{
+  position: absolute;
+  width: 120px;
+  height: 80px;
+  background-image: url("./Images/saltamontes.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hide{
+  display: none;
+}
+
+#live1{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 950px;
+  top:0px;
+
+}
+
+#live2{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 900px;
+  top:0px;
+}
+
+#live3{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 850px;
+  top:0px;
+}
+
+
