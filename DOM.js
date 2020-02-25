@@ -15,7 +15,7 @@ setInterval(function(){
 
   setTimeout(function() {
     divGrasshopper.remove();
-  }, 1500);
+  }, 3000);
 }, 500);
 
 
@@ -24,3 +24,8 @@ var newChamaleon = new Chamaleon(getRandomColor(), chamaleonHTLM);
 setInterval(function() {
   newChamaleon.changeColor(getRandomColor());
 }, 1500);
+
+var wrapperlives = document.getElementsByClassName('lives');
+var live1 = document.getElementById('live1');
+var live2 = document.getElementById('live2');
+var live3 = document.getElementById('live3');

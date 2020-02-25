@@ -3,23 +3,31 @@ function Grasshopper(color, posX, posY) {
   this.color = color;
   this.posX = posX;
   this.posY = posY;
+  this.lives = 3
 
+  var that = this
   this.show = function () {
     this.html.classList.add("grasshopper");
     this.html.classList.add(`g-${this.color}`);
     this.html.style.top = this.posY+"px";
     this.html.style.left = this.posX+"px";
     
-    var that = this;
     this.html.onclick = function (e) {
       var chamaleonHTLM = document.getElementsByClassName('chamaleon')[0].classList[1]
       var grasshopperColor = e.target.classList[1]
 
-      var colorValueChamaleon = chamaleonHTLM.split("-")
-      var 
-      
-      
-      
+      var colorValueChamaleon = chamaleonHTLM.split("-");
+      var colorValueGrasshopper = grasshopperColor.split("-");
+
+      if (colorValueChamaleon[1] != colorValueGrasshopper[1]) {
+        var wrapperlives = document.getElementById('lives');
+        if (wrapperlives.children.length != 1){
+          wrapperlives.children[0].remove()
+        } else {
+          wrapperlives.children[0].remove()
+          alert('LOOOOOOOSER')
+        }
+      }   
       that.html.remove()
     }
     return this.html;

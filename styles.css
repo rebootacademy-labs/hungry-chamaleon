@@ -58,35 +58,24 @@ section{
   background-image: url("/Images/grasshopper-blue.png");
 }
 
-
-
 .hide{
   display: none;
 }
 
-#live1{
+#lives{
   position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 950px;
+  display: flex;
+  flex-direction: row;
   top:5px;
-
+  right: 5px;
+  width: 170px;
 }
 
-#live2{
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 900px;
-  top:5px;
+.live{
+  width: 55px;
+  height: 50px;
+  background-image: url("./Images/heart.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-#live3{
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 850px;
-  top:5px;
-}
-
 
