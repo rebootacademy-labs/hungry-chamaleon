@@ -1,27 +1,26 @@
-var wrapperGrasshopper = document.getElementById("wrapper-grasshopper")
+function getRandomColor(){
+  var colors = ["red", "green", "blue", "yellow"];
+  var randomNumber = Math.floor(Math.random()*4);
+  return colors[randomNumber];
+}
 
-var intervalGrasshopper = setInterval(function(){
+var wrapperGrasshopper = document.getElementById("wrapper-grasshopper");
+setInterval(function(){
   var x = Math.floor(Math.random()*(1000-120));
   var y = Math.floor(Math.random()*(430-80));
-  var colors = ["red", "green", "blue", "yellow"]
-  var randomNumber = Math.floor(Math.random()*4)
-  var newGrasshopper = new Grasshopper(colors[randomNumber], x, y)
-  var divGrasshopper = newGrasshopper.show()
-  wrapperGrasshopper.appendChild(divGrasshopper)
-  var outGrasshopper = setTimeout(() => {
+
+  var newGrasshopper = new Grasshopper(getRandomColor(), x, y);
+  var divGrasshopper = newGrasshopper.show();
+  wrapperGrasshopper.appendChild(divGrasshopper);
+
+  setTimeout(function() {
     divGrasshopper.remove();
-  }, 3000);
-}, 1000);
+  }, 1500);
+}, 500);
 
 
-
-
-var wrapperChamaleon = document.getElementById("wrapper-chamaleon")
-
-var intervalChamaleon = setInterval(function(){
-  var colores = ["rojo", "verde", "azul", "amarillo"]
-  var randomNumbers = Math.floor(Math.random()*4);
-  var newChamaleon = new Chamaleon(colores[randomNumbers]);
-  var divChamaleon = newChamaleon.show();
-  wrapperChamaleon.appendChild(divChamaleon);
-}, 1000)
+var chamaleonHTLM = document.getElementsByClassName('chamaleon')[0]
+var newChamaleon = new Chamaleon(getRandomColor(), chamaleonHTLM);
+setInterval(function() {
+  newChamaleon.changeColor(getRandomColor());
+}, 1500);

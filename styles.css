@@ -2,7 +2,7 @@ section{
   position: relative;
   width: 1000px;
   height: 630px;
-  background-image: url("./Images/fondo-juego.jpeg");
+  background-image: url("./Images/stage.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
@@ -18,20 +18,20 @@ section{
   background-size: cover;
 }
 
-.rojo {
-  background-image: url("/Images/red\ chamaleon.png");
+.c-red {
+  background-image: url("/Images/chameleon-red.png");
 }
 
-.azul {
-  background-image: url("/Images/blue\ chamaleon.png");
+.c-blue {
+  background-image: url("/Images/chameleon-blue.png");
 }
 
-.verde {
-  background-image: url("/Images/green\ chamaleon.png");
+.c-green {
+  background-image: url("/Images/chameleon-green.png");
 }
 
-.amarillo {
-  background-image: url("/Images/yellow\ chamaleon.png");
+.c-yellow {
+  background-image: url("/Images/chameleon-yellow.png");
 }
 
 .grasshopper{
@@ -42,20 +42,20 @@ section{
   background-size: cover;
 }
 
-.red{
-  background-image: url("./Images/saltamontes\ red.png");
+.g-red{
+  background-image: url("./Images/grasshopper-red.png");
 }
 
-.green {
-  background-image: url("/Images/saltamontes\ green.png");
+.g-green {
+  background-image: url("/Images/grasshopper-green.png");
 }
 
-.yellow {
-  background-image: url("/Images/saltamontes\ yellow.png");
+.g-yellow {
+  background-image: url("/Images/grasshopper-yellow.png");
 }
 
-.blue {
-  background-image: url("/Images/saltamontes\ blue.png");
+.g-blue {
+  background-image: url("/Images/grasshopper-blue.png");
 }
 
 
@@ -69,7 +69,7 @@ section{
   width: 40px;
   height: 40px;
   left: 950px;
-  top:0px;
+  top:5px;
 
 }
 
@@ -78,7 +78,7 @@ section{
   width: 40px;
   height: 40px;
   left: 900px;
-  top:0px;
+  top:5px;
 }
 
 #live3{
@@ -86,7 +86,7 @@ section{
   width: 40px;
   height: 40px;
   left: 850px;
-  top:0px;
+  top:5px;
 }
 
 
