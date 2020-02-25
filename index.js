@@ -9,7 +9,6 @@ function Grasshopper(color, posX, posY) {
     this.html.classList.add("grasshopper");
     this.html.style.top = this.posY+"px";
     this.html.style.left = this.posX+"px";
-    console.log(this.html)
     var that = this;
     this.html.onclick = function () {
       that.html.remove()
