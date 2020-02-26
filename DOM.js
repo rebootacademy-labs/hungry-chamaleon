@@ -5,9 +5,10 @@ function getRandomColor(){
 }
 
 var wrapperGrasshopper = document.getElementById("wrapper-grasshopper");
+
 setInterval(function(){
   var x = Math.floor(Math.random()*(1000-120));
-  var y = Math.floor(Math.random()*(380-80)+50);
+  var y = Math.floor(Math.random()*(380-80)+100);
 
   var newGrasshopper = new Grasshopper(getRandomColor(), x, y);
   var divGrasshopper = newGrasshopper.show();

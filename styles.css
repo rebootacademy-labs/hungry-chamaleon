@@ -1,7 +1,12 @@
+body{
+  background-color: #12A829;
+}
+
 section{
   position: relative;
+  top:5vh;
   width: 1000px;
-  height: 630px;
+  height: 700px;
   background-image: url("./Images/stage.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,7 +18,7 @@ section{
   width: 111px;
   height: 180px;
   left: 453px;
-  top: 440px;
+  top: 510px;
   background-repeat: no-repeat;
   background-size: cover;
 }

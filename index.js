@@ -11,6 +11,9 @@ function Grasshopper(color, posX, posY) {
     this.html.classList.add(`g-${this.color}`);
     this.html.style.top = this.posY+"px";
     this.html.style.left = this.posX+"px";
+
+    var grasshopperSound = new Audio('./sounds/aparicion.saltamontes.mp3')
+    grasshopperSound.play()
     
     this.html.onclick = function (e) {
       var chamaleonHTLM = document.getElementsByClassName('chamaleon')[0].classList[1]
@@ -20,15 +23,19 @@ function Grasshopper(color, posX, posY) {
       var colorValueGrasshopper = grasshopperColor.split("-");
 
       if (colorValueChamaleon[1] != colorValueGrasshopper[1]) {
+        var looseLive = new Audio('./sounds/risa-pierde-vidas.mp3')
+        looseLive.play()
         var wrapperlives = document.getElementById('lives');
         if (wrapperlives.children.length != 1){
           wrapperlives.children[0].remove()
         } else {
           wrapperlives.children[0].remove()
           alert('LOOOOOOOSER')
+          
         }
-      } 
-      if (colorValueChamaleon[1] == colorValueGrasshopper[1]) {
+      } else {
+        var eat = new Audio('./sounds/lengua-camaleon.m4a')
+        eat.play()
         var counter = document.getElementById('counter');
         counter.innerHTML++;
       }  
@@ -50,3 +57,10 @@ function Chamaleon(color, html) {
 
   }
 }
+
+function Game() {
+
+}
+
+var start = new Audio('./sonido-fondo.mp3')
+start.play()
