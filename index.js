@@ -27,7 +27,11 @@ function Grasshopper(color, posX, posY) {
           wrapperlives.children[0].remove()
           alert('LOOOOOOOSER')
         }
-      }   
+      } 
+      if (colorValueChamaleon[1] == colorValueGrasshopper[1]) {
+        var counter = document.getElementById('counter');
+        counter.innerHTML++;
+      }  
       that.html.remove()
     }
     return this.html;

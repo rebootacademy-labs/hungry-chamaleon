@@ -7,7 +7,7 @@ function getRandomColor(){
 var wrapperGrasshopper = document.getElementById("wrapper-grasshopper");
 setInterval(function(){
   var x = Math.floor(Math.random()*(1000-120));
-  var y = Math.floor(Math.random()*(430-80));
+  var y = Math.floor(Math.random()*(380-80)+50);
 
   var newGrasshopper = new Grasshopper(getRandomColor(), x, y);
   var divGrasshopper = newGrasshopper.show();
@@ -23,9 +23,12 @@ var chamaleonHTLM = document.getElementsByClassName('chamaleon')[0]
 var newChamaleon = new Chamaleon(getRandomColor(), chamaleonHTLM);
 setInterval(function() {
   newChamaleon.changeColor(getRandomColor());
-}, 1500);
+}, 3000);
 
 var wrapperlives = document.getElementsByClassName('lives');
 var live1 = document.getElementById('live1');
 var live2 = document.getElementById('live2');
 var live3 = document.getElementById('live3');
+
+var counter = document.getElementById('counter') ;
+counter.innerHTML = 0;
