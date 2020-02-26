@@ -30,8 +30,8 @@ function Grasshopper(color, posX, posY) {
           wrapperlives.children[0].remove()
         } else {
           wrapperlives.children[0].remove()
+          game.stop()
           alert('LOOOOOOOSER')
-          
         }
       } else {
         var eat = new Audio('./sounds/lengua-camaleon.m4a')
@@ -54,13 +54,73 @@ function Chamaleon(color, html) {
     var colorRemove = this.html.classList[1].split("-")[1]
     this.html.classList.remove(`c-${colorRemove}`);
     this.html.classList.add(`c-${newColor}`);
-
   }
+}
+
+
+function getRandomColor(){
+  var colors = ["red", "green", "blue", "yellow"];
+  var randomNumber = Math.floor(Math.random()*4);
+  return colors[randomNumber];
 }
 
 function Game() {
 
+  this.grasshoperInterval;
+  this.chamaleonInterval;
+  this.startMusic;
+
+  this.init = function() {
+    this.startMusic = new Audio('./sounds/sonido-fondo.mp3')
+    this.startMusic.loop = true
+    this.startMusic.play()
+    
+    var wrapperGrasshopper = document.getElementById("wrapper-grasshopper");
+    
+    this.grasshoperInterval = setInterval(function(){
+      var x = Math.floor(Math.random()*(1000-120));
+      var y = Math.floor(Math.random()*(380-80)+100);
+    
+      var newGrasshopper = new Grasshopper(getRandomColor(), x, y);
+      var divGrasshopper = newGrasshopper.show();
+      wrapperGrasshopper.appendChild(divGrasshopper);
+    
+      setTimeout(function() {
+        divGrasshopper.remove();
+      }, 3000);
+    }, 500);
+    
+    var chamaleonHTLM = document.getElementsByClassName('chamaleon')[0]
+    var newChamaleon = new Chamaleon(getRandomColor(), chamaleonHTLM);
+    
+    this.chamaleonInterval = setInterval(function() {
+      newChamaleon.changeColor(getRandomColor());
+    }, 3000);
+    
+    var counter = document.getElementById('counter') ;
+    counter.innerHTML = 0;
+  }
+
+  this.stop = function() {
+    this.startMusic.pause()
+    // musica de mierda que me hacen hacer a las 8 de la noche :)
+    clearInterval(this.chamaleonInterval)
+    clearInterval(this.grasshoperInterval)
+  }
 }
 
-var start = new Audio('./sonido-fondo.mp3')
-start.play()
+var game = new Game()
+
+var start = document.getElementById('btn-play')
+var portada = document.getElementById('portada')
+var container = document.getElementById('container')
+container.style.display = 'none'
+
+start.onclick = function () {
+  portada.style.display = 'none'
+  container.style.display = ''
+  game.init()
+}
+
+
+
