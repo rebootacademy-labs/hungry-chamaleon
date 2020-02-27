@@ -44,15 +44,22 @@ function Grasshopper(color, posX, posY) {
         var tongue = document.getElementById('tongue');
         tongue.style.transform = `rotate(${angle}rad)`
 
-        var height = 500;
+        var tongue_height = 0;
 
         let timerId = setInterval(function(){
-          tongue.style.height = `${height+=2}px`
-          if (height >= that.posX){ 
+          tongue.style.height = `${tongue_height += 30}px`;
+          tongue.style.bottom = `-${tongue_height/2}px`;
+          if (tongue_height >= (700-that.posY)*2){ 
             clearInterval(timerId);
-  
+            let timerId2 = setInterval(function(){
+              tongue.style.height = `${tongue_height -= 30}px`;
+              tongue.style.bottom = `-${tongue_height/2}px`;
+              if (tongue_height < 10) {
+                clearInterval(timerId2);
+              }
+            }.bind(this),1)
           }
-        },20)
+        }.bind(this),1)
 
         var eat = new Audio('./sounds/lengua-camaleon.m4a')
         eat.play()

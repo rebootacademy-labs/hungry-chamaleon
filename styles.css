@@ -10,28 +10,28 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
-  /* overflow: hidden; */
+  overflow: hidden;
+  box-shadow: 0px 1px 5px 8px rgba(0,0,0,0.75);
 }
 
 #tongue{
   position:absolute;
   width: 20px;
-  height: 500px;
+  height: 0px;
   left: 490px;
   bottom: -250px;
   background-color: tomato;
-  
-
 }
 
 .chamaleon{
   position: absolute;
   width: 111px;
   height: 180px;
-  left: 453px;
-  top: 510px;
+  left: 570px;
+  top: 680px;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 1000;
 }
 
 .c-red {
@@ -99,30 +99,29 @@ body{
   width: 100vw;
   height: 100vh;
   background-color: #12A829;
+  text-align: center;
 }
 
-#portada > div {
-  position: absolute;
-  width: 70%;
-  height: 80%;
-  margin: auto;
-  left: 240px;
-  top: -90px;
-  right: 0;
-  bottom: 0;
-  font-size: 6em;
+#portada > h2 {
+  font-size: 80px;
   font-family: 'Shadows Into Light';
+  text-align: center;
+  margin-bottom: 0px;
+}
+#portada > img {
+  transform: scale(0.7);
+  margin-top: -50px;
 }
 
-#portada > img {
-  position: absolute;
-  width: 40%;
-  height: 60%;
-  margin: auto;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
+#btn-play{
+  border-radius: 10%;
+  background-color: crimson;
+  color: white;
+  width: 125px;
+  height: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  margin-top: 10px;
 }
 
 #counter {
@@ -140,18 +139,4 @@ body{
   color: white;
 }
 
-#btn-play{
-  position: absolute;
-  border-radius: 10%;
-  background-color: crimson;
-  color: white;
-  width: 125px;
-  height: 50px;
-  top: 600px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: xx-large;
-}
+
