@@ -10,6 +10,18 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
+  /* overflow: hidden; */
+}
+
+#tongue{
+  position:absolute;
+  width: 20px;
+  height: 500px;
+  left: 490px;
+  bottom: -250px;
+  background-color: tomato;
+  
+
 }
 
 .chamaleon{

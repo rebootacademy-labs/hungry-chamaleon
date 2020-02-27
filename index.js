@@ -34,6 +34,26 @@ function Grasshopper(color, posX, posY) {
           alert('LOOOOOOOSER')
         }
       } else {
+        const B = Math.abs(500 - that.posX);
+        const A = 700 - that.posY;
+        var angle = Math.PI/2 - Math.atan(A/B);
+        if (that.posX < 500) {
+          angle *= -1
+        }
+        
+        var tongue = document.getElementById('tongue');
+        tongue.style.transform = `rotate(${angle}rad)`
+
+        var height = 500;
+
+        let timerId = setInterval(function(){
+          tongue.style.height = `${height+=2}px`
+          if (height >= that.posX){ 
+            clearInterval(timerId);
+  
+          }
+        },20)
+
         var eat = new Audio('./sounds/lengua-camaleon.m4a')
         eat.play()
         var counter = document.getElementById('counter');
@@ -87,8 +107,8 @@ function Game() {
     
       setTimeout(function() {
         divGrasshopper.remove();
-      }, 3000);
-    }, 500);
+      }, 60000);
+    }, 1000);
     
     var chamaleonHTLM = document.getElementsByClassName('chamaleon')[0]
     var newChamaleon = new Chamaleon(getRandomColor(), chamaleonHTLM);
