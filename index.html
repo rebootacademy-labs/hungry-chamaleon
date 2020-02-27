@@ -12,9 +12,13 @@
 <body>
   <div id="portada">
     <h2>HUNGRY CHAMALEON</h2>
-    <img src="/Images/chamaleon-stage2.png"><br/>
+    <img src="./Images/chamaleon-stage2.png"><br/>
     <button id="btn-play"> START!</button>
   </div>
+        <div id="game-over" class="desactivar">
+          <img src="./Images/loser.png">
+          <button id="botonOver">TRY AGAIN</button>
+        </div>
   <section id="container">
     <div id="tongue"></div>
     <div id="wrapper-grasshopper"></div>
@@ -26,6 +30,7 @@
     <div id="counter"></div>
   </section>
   <div class="chamaleon"></div>
+  
 
   <script type="text/javascript" src="index.js"></script>
   <script type="text/javascript" src="DOM.js"></script>

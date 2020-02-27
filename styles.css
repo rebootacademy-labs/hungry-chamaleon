@@ -33,19 +33,19 @@ body{
 }
 
 .c-red {
-  background-image: url("/Images/chameleon-red.png");
+  background-image: url("./Images/chameleon-red.png");
 }
 
 .c-blue {
-  background-image: url("/Images/chameleon-blue.png");
+  background-image: url("./Images/chameleon-blue.png");
 }
 
 .c-green {
-  background-image: url("/Images/chameleon-green.png");
+  background-image: url("./Images/chameleon-green.png");
 }
 
 .c-yellow {
-  background-image: url("/Images/chameleon-yellow.png");
+  background-image: url("./Images/chameleon-yellow.png");
 }
 
 .grasshopper{
@@ -61,15 +61,15 @@ body{
 }
 
 .g-green {
-  background-image: url("/Images/grasshopper-green.png");
+  background-image: url("./Images/grasshopper-green.png");
 }
 
 .g-yellow {
-  background-image: url("/Images/grasshopper-yellow.png");
+  background-image: url("./Images/grasshopper-yellow.png");
 }
 
 .g-blue {
-  background-image: url("/Images/grasshopper-blue.png");
+  background-image: url("./Images/grasshopper-blue.png");
 }
 
 .hide{
@@ -98,6 +98,7 @@ body{
   height: 100vh;
   background-color: #12A829;
   text-align: center;
+
 }
 
 #portada > h2 {
@@ -137,4 +138,30 @@ body{
   color: white;
 }
 
+#game-over {
+  
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  text-align: center;
+}
 
+.desactivar{
+  display: none;
+}
+
+.try-again{
+  border-radius: 10%;
+  background-color: crimson;
+  color: white;
+  width: 125px;
+  height: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  margin-top: 80px;
+}
+
+.end {
+  transform: scale(1.0);
+  margin-top: 50px;
+}

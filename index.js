@@ -31,7 +31,18 @@ function Grasshopper(color, posX, posY) {
         } else {
           wrapperlives.children[0].remove()
           game.stop()
-          alert('LOOOOOOOSER')
+          var opacityContainer = document.getElementById('container');
+          opacityContainer.style.opacity = 0.3;
+          var gameOver = document.getElementById('game-over');
+          var portada1 = document.getElementById('portada');
+          gameOver.classList.remove("desactivar");
+          portada1.classList.add("desactivar");
+          container.classList.add("desactivar");
+          var botonTry = document.getElementById('botonOver');
+          bottonTry.onclick = function() {
+            
+
+          }
         }
       } else {
         const B = Math.abs(500 - that.posX);
