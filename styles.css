@@ -1,7 +1,11 @@
-section{
+body{
+  background-color: #12A829;
+}
+#container {
   position: relative;
+  top:5vh;
   width: 1000px;
-  height: 630px;
+  height: 700px;
   background-image: url("./Images/stage.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,7 +17,7 @@ section{
   width: 111px;
   height: 180px;
   left: 453px;
-  top: 440px;
+  top: 510px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -79,6 +83,36 @@ section{
   background-size: cover;
 }
 
+#portada{
+  width: 100vw;
+  height: 100vh;
+  background-color: #12A829;
+}
+
+#portada > div {
+  position: absolute;
+  width: 70%;
+  height: 80%;
+  margin: auto;
+  left: 240px;
+  top: -90px;
+  right: 0;
+  bottom: 0;
+  font-size: 6em;
+  font-family: 'Shadows Into Light';
+}
+
+#portada > img {
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  margin: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
 #counter {
   position: absolute;
   width: 100px;
@@ -94,3 +128,18 @@ section{
   color: white;
 }
 
+#btn-play{
+  position: absolute;
+  border-radius: 10%;
+  background-color: crimson;
+  color: white;
+  width: 125px;
+  height: 50px;
+  top: 600px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: xx-large;
+}
