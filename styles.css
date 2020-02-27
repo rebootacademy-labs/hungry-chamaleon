@@ -150,7 +150,7 @@ body{
   display: none;
 }
 
-.try-again{
+#botonOver {
   border-radius: 10%;
   background-color: crimson;
   color: white;

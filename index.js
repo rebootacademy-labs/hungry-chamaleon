@@ -39,9 +39,8 @@ function Grasshopper(color, posX, posY) {
           portada1.classList.add("desactivar");
           container.classList.add("desactivar");
           var botonTry = document.getElementById('botonOver');
-          bottonTry.onclick = function() {
-            
-
+          botonTry.onclick = function() {
+            location.reload();
           }
         }
       } else {
