@@ -130,7 +130,6 @@ function Game() {
 
   this.stop = function() {
     this.startMusic.pause()
-    // musica de mierda que me hacen hacer a las 8 de la noche :)
     clearInterval(this.chamaleonInterval)
     clearInterval(this.grasshoperInterval)
   }

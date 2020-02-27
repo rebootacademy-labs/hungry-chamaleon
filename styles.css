@@ -3,13 +3,12 @@ body{
 }
 #container {
   position: relative;
-  top:5vh;
   width: 1000px;
   height: 700px;
   background-image: url("./Images/stage.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 auto;
+  margin: 5vh auto;
   overflow: hidden;
   box-shadow: 0px 1px 5px 8px rgba(0,0,0,0.75);
 }
@@ -24,11 +23,10 @@ body{
 }
 
 .chamaleon{
-  position: absolute;
+  position: relative;
   width: 111px;
   height: 180px;
-  left: 570px;
-  top: 680px;
+  margin: -100px auto 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1000;
@@ -109,8 +107,8 @@ body{
   margin-bottom: 0px;
 }
 #portada > img {
-  transform: scale(0.7);
-  margin-top: -50px;
+  transform: scale(1.0);
+  margin-top: 50px;
 }
 
 #btn-play{
@@ -121,7 +119,7 @@ body{
   height: 50px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: x-large;
-  margin-top: 10px;
+  margin-top: 80px;
 }
 
 #counter {
