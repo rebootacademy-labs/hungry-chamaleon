@@ -31,8 +31,6 @@ function Grasshopper(color, posX, posY) {
         } else {
           wrapperlives.children[0].remove()
           game.stop()
-          var opacityContainer = document.getElementById('container');
-          opacityContainer.style.opacity = 0.3;
           var gameOver = document.getElementById('game-over');
           var portada1 = document.getElementById('portada');
           gameOver.classList.remove("desactivar");
@@ -85,6 +83,7 @@ function Grasshopper(color, posX, posY) {
 function Chamaleon(color, html) {
   this.html = html
   this.color = color;
+  
   this.html.classList.add(`c-${color}`);
 
   this.changeColor = function(newColor) {
@@ -124,7 +123,7 @@ function Game() {
     
       setTimeout(function() {
         divGrasshopper.remove();
-      }, 60000);
+      }, 3000);
     }, 1000);
     
     var chamaleonHTLM = document.getElementsByClassName('chamaleon')[0]
@@ -132,7 +131,7 @@ function Game() {
     
     this.chamaleonInterval = setInterval(function() {
       newChamaleon.changeColor(getRandomColor());
-    }, 3000);
+    }, 2000);
     
     var counter = document.getElementById('counter') ;
     counter.innerHTML = 0;

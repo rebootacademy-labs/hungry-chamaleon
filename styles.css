@@ -139,7 +139,6 @@ body{
 }
 
 #game-over {
-  
   width: 100vw;
   height: 100vh;
   background-color: white;
@@ -155,13 +154,12 @@ body{
   background-color: crimson;
   color: white;
   width: 125px;
-  height: 50px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: x-large;
-  margin-top: 80px;
+  margin-top: 150px;
 }
 
 .end {
   transform: scale(1.0);
-  margin-top: 50px;
+  margin-top: 100px;
 }
