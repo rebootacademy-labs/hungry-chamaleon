@@ -156,6 +156,3 @@ start.onclick = function () {
   container.style.display = ''
   game.init()
 }
-
-
-
