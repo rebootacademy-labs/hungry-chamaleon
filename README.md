@@ -1,11 +1,11 @@
 # Hungry Chamaleon
 ## Introduction
-It’s a game to entertain you in those dead times you can have.
+It’s a game to entertain you in those dead times you could have.
 ## Game description
-You have to catch the grasshopper who has the same color of your chamaleon, but be carefull!, your chamaleon changes his color very fast and the grasshopper dissapear very fast too!
-You have 3 lives, and if you cacht the wrong grasshopper you loose a live, and the grasshoppers are a little bit mockers.
+You have to catch the grasshopper, who has the same color of your chamaleon, but be carefull!, your chamaleon changes his color very fast and the grasshopper dissapear very fast too!
+You have 3 lives, and if you catch the wrong grasshopper you loose a live, and the grasshoppers are a little bit mockers.
 ## Game example
-
+![](Images/gif-game-example.gif)
 
 ## Code sample
 ```[Javascript]
