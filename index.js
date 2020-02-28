@@ -124,8 +124,8 @@ function Game() {
     
       setTimeout(function() {
         divGrasshopper.remove();
-      }, 60000);
-    }, 1000);
+      }, 4000);
+    }, 2000);
     
     var chamaleonHTLM = document.getElementsByClassName('chamaleon')[0]
     var newChamaleon = new Chamaleon(getRandomColor(), chamaleonHTLM);
